@@ -1,0 +1,24 @@
+.container {
+    box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.container:hover {
+    background-color: #eee;
+}
+
+.container.marked {
+    border: 1px solid red;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header label {
+    font-size: 18px;
+    font-weight: bold;
+}

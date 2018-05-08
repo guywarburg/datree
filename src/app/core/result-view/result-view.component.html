@@ -1,0 +1,8 @@
+<div class="container" [class.marked]="result.clicked">
+  <div class="header">
+    <label>{{result.name}}</label>
+    <app-score-badge [score]="result.score.final"></app-score-badge>
+  </div>
+  <p>{{result.desc}}</p>
+  <!-- <pre>{{result | json}}</pre> -->
+</div>

@@ -1,0 +1,8 @@
+<h1>Datree</h1>
+<h3>Find the perfect npm package</h3>
+
+<app-search-bar (query)="fetchNpms($event)"></app-search-bar>
+<div class="main-content">
+  <app-results-container class="cards" [results]="results$ | async" [clickedWord]="clickedWord"></app-results-container>
+  <app-word-cloud [results]="results$ | async" (clickedWord)="markClickedWord($event)"></app-word-cloud>
+</div>
